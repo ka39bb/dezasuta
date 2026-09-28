@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>コーディング3回目</title>
+</head>
+<body>
+    <script>
+        var test = "JavaScript記述例です";
+        var test = "JavaScriptです";
+        console.log(test);
+
+        let test01 = "JavaScript記述例です";
+        test01 = "JavaScriptです"
+        console.log(test01);
+
+        const test02 = "JavaScript記述例です";
+        console.log(test02);
+
+        //文字型
+        let num01 = "1+2";
+        console.log(num01);
+        //数値型
+        let num02 = 1+2;
+        console.log(num02);
+
+        //配列
+        let array = ["ブドウ","ミカン","モモ"]
+        console.log(array.push("キウイ"));
+        console.log(array);
+        console.log(array[0]);//０番目が存歳する
+        console.log(array.length);//合計を出すときは一つ目からカウントする
+
+        //条件分岐
+        let num03 = 2;//ここの数字が変わると挙動が分岐する
+        if (num03 > 4){
+            console.log("これは4より大きいです");
+        } else if(num03 > 1){//else if は複数置ける
+            console.log("これは1より大きいです");
+        }else {
+            console.log("これは1より小さいです");
+        }
+
+        //繰り返し処理
+        //超えたい合計数字が条件基準
+        let num08 = 1;
+        while(num08 < 100){
+            num08 = num08 * 2;//再代入　100を超えるまでnum08に2乗し続ける　num08は更新されるため1ではなくなる
+        }
+        console.log(num08);
+
+        //繰り返し処理
+        //繰り返したい回数が条件基準　i=回数
+        let num09 = 0;
+        for (i = 0; i < 5; i++){//i++は指示を終わる合図？i+1のこと？
+            num09 = num09 + 1;
+        }
+        console.log(num09);
+    </script>
+</body>
+</html>
