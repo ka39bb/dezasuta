@@ -1,0 +1,51 @@
+@charset "utf-8";
+
+body{
+    background-color: #eeeeee;
+}
+
+.service{
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.service_topic{
+    text-align: center;
+    color: #098270;
+    margin: 40px;
+}
+
+.service_list{
+    display: flex;
+    gap: 20px;
+}
+
+.service_item{
+    background-color: #ffffff;
+}
+
+.list_topic{
+    color: #098270;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.list_topic::before {
+    content: "";
+    width: 10px;
+    height: 28px;
+    background-color: #098270;
+    margin-right: 8px;
+}
+
+.service_txt{
+    margin: 10px;
+    line-height: 1.2;
+}
+
+@media screen and (max-width: 400px) {
+    .service_list {
+        flex-direction: column;
+    }
+}
