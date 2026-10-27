@@ -282,7 +282,6 @@ about
 
     .about__img{
         width: 89.74%;
-        max-width: 350px;
     }
 
     .about__img img{
@@ -291,7 +290,6 @@ about
 
     .about__content{
         width: 89.74%;
-        max-width: 350px;
     }
 
     #about p{
@@ -337,7 +335,6 @@ menu
 
     .menu__list li{
         width: 89.74%;
-        max-width: 350px;
     }
 }
 
@@ -390,7 +387,7 @@ event
 
 @media screen and (max-width: 768px){
     .event__box ul{
-        max-width: 310px;
+        padding: 0 20px;
         font-size: 16px;
     }
 
@@ -459,6 +456,7 @@ footer
 
     .info{
         flex-direction: column;
+        margin-bottom: 248px;
     }
 
     .footer__logo{
@@ -477,10 +475,6 @@ footer
     .info__list dd{
         margin: 0;
     }
-
-    #footer p{
-    margin: 248px 0 80px;
-}
 }
 
 /*===========
